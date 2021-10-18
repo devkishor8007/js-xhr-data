@@ -1,6 +1,6 @@
-document.getElementById("button").addEventListener("click", fetchTxt);
+document.getElementById("button").addEventListener("click", fetchJson);
 
-function fetchTxt() {
+function fetchJson() {
   const xhr = new XMLHttpRequest();
 
   xhr.open("GET", "data.json", true);
@@ -12,8 +12,13 @@ function fetchTxt() {
   xhr.onload = function () {
     console.log("on load readystate ", this.readyState);
     if (this.status === 200) {
-      const data = JSON.parse(this.responseText);
-      const output = `<p>My name is ${data.name} and Learning ${data.learn}</p>`;
+      const datas = JSON.parse(this.responseText);
+      let output = "";
+      datas.forEach((data) => {
+        output += `<div class="alert alert-info" role="alert">
+        My name is ${data.name} and Learning ${data.learn}
+        </div>`;
+      });
       document.getElementById("output").innerHTML = output;
     }
   };

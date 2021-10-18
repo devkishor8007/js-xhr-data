@@ -1,5 +1,37 @@
-{
-    "id":1,
-    "name":"kishor kc",
-    "learn":"javascript"
-}
+[
+    {
+        "id": 1,
+        "name": "kishor kc",
+        "learn": "javascript"
+    },
+    {
+        "id": 2,
+        "name": "Pramish Yadav",
+        "learn": "python"
+    },
+    {
+        "id": 3,
+        "name": "Mahendra Thapa",
+        "learn": "javascript"
+    },
+    {
+        "id": 4,
+        "name": "Roshan Adhikari",
+        "learn": "php"
+    },
+    {
+        "id": 5,
+        "name": "Sujeet Kafle",
+        "learn": "C++"
+    },
+    {
+        "id": 6,
+        "name": "Dipesh Podel",
+        "learn": "Networking"
+    },
+    {
+        "id": 7,
+        "name": "Sugam Chatukle",
+        "learn": "Java"
+    }
+]

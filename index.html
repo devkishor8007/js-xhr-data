@@ -14,7 +14,16 @@
 
 <body>
     <div class="mx-2 mt-2">
-        <button id="button" class="btn btn-info">Fetch Data From Json Array</button>
+        <form action="">
+            <div>
+                <label for="">Search the number for getting Random JOKES API</label><br>
+                <input type="number" id="number">
+            </div>
+            <div>
+                <button class="mt-2 btn btn-outline-primary" id="getdata">Get Data API Remote</button>
+            </div>
+        </form>
+        <ul class="jokes mt-3"></ul>
 
         <div class="mt-3" id="output"></div>
         <script src="./script.js"></script>
